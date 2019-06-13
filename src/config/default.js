@@ -12,7 +12,7 @@ import { isDesktop, isMobile } from '@/utils'
  **/
 const env = { isDesktop: null, isMobile: null }
 const updateEnv = (force) => {
-    if (window) {
+    if (typeof window == 'object') {
         if (!window.__ZMAGE_INITIALIZED___ || force) {
             const mobile = isMobile()
             window.__ZMAGE_INITIALIZED___ = true

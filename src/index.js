@@ -9,6 +9,7 @@ import Portals from './components/Portals'
 import Wrapper from './components/Wrapper'
 // Config
 import { defType, defProp, defPropDesktop, defPropMobile, defPropAuto } from './config/default'
+var window = {};
 
 export default class ReactZmage extends React.PureComponent {
 
